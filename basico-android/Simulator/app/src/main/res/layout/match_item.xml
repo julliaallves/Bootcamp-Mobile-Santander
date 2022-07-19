@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/magin_default">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imagemTimeDaCasa"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginStart="@dimen/magin_default"
+            android:layout_marginTop="@dimen/magin_default"
+            android:contentDescription="@string/cd_home_team"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/nomeTimeDaCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/magin_default"
+            app:layout_constraintEnd_toEndOf="@+id/imagemTimeDaCasa"
+            app:layout_constraintStart_toStartOf="@+id/imagemTimeDaCasa"
+            app:layout_constraintTop_toBottomOf="@+id/imagemTimeDaCasa"
+            tools:text="Home team" /> //estava android, mudei p tools só p ficar visual, pois vou puxar da api
+
+        <TextView
+            android:id="@+id/scoreTimeDaCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imagemTimeDaCasa"
+            app:layout_constraintEnd_toStartOf="@+id/versus"
+            app:layout_constraintStart_toEndOf="@+id/imagemTimeDaCasa"
+            app:layout_constraintTop_toTopOf="@+id/imagemTimeDaCasa"
+            tools:text="99" />
+
+        <TextView
+            android:id="@+id/versus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_versus"
+            app:layout_constraintBottom_toBottomOf="@+id/imagemTimeDaCasa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imagemTimeDaCasa" />
+
+        <ImageView
+            android:id="@+id/imagemTimeVisitante"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
+            android:layout_marginTop="@dimen/magin_default"
+            android:layout_marginEnd="@dimen/magin_default"
+            android:contentDescription="@string/cd_away_team"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/scoreTimeVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/imagemTimeVisitante"
+            app:layout_constraintEnd_toStartOf="@+id/imagemTimeVisitante"
+            app:layout_constraintStart_toEndOf="@+id/versus"
+            app:layout_constraintTop_toTopOf="@+id/imagemTimeVisitante"
+            tools:text="99" />
+
+        <TextView
+            android:id="@+id/nomeTimeVisitante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/magin_default"
+            app:layout_constraintEnd_toEndOf="@+id/imagemTimeVisitante"
+            app:layout_constraintStart_toStartOf="@+id/imagemTimeVisitante"
+            app:layout_constraintTop_toBottomOf="@+id/imagemTimeVisitante"
+            tools:text="TextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

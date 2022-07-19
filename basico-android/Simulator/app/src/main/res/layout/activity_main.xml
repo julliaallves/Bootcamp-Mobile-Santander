@@ -19,7 +19,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewPartidas"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            tools:listitem="@layout/match_item"
+            tools:itemCount="4"/> //adiciona esses 2 tools, o 1 pra repetir e o 2 p numero de repetições
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -28,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:contentDescription="@string/txt_simulate"
+        android:contentDescription="@string/cd_simulate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_simulate" />
