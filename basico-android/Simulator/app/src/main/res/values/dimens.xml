@@ -2,6 +2,6 @@
 <resources>
     <dimen name="magin_default">16dp</dimen>
     <dimen name="team_image_size">120dp</dimen>
-    <dimen name="app_bar_height">152sp</dimen>
+    <dimen name="app_bar_height">180sp</dimen> //aumentar p 180
     <dimen name="margin_default">16dp</dimen>
 </resources>
